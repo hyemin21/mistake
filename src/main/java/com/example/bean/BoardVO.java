@@ -1,13 +1,33 @@
-package com.crud.bean;
+package com.example.bean;
 
 import java.util.Date;
 
 public class BoardVO {
 	private int seq;
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	private String category;
 	private String title;
 	private String writer;
 	private String content;
 	private Date regdate;
+	private String photo;
+
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+
 	private int cnt;
 	
 	public int getSeq() {
